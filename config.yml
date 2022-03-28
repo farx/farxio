@@ -1,0 +1,86 @@
+baseURL: 'http://farx.io/'
+languageCode: 'en-us'
+title: 'farx industries'
+#theme = ["https://github.com/adityatelange/hugo-PaperMod"]
+theme: "PaperMod"
+enableEmoji: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+            main:
+                - name: About
+                  url: about/
+                  weight: 5
+                - name: Posts
+                  url: posts/
+                  weight: 6
+                - name: Search
+                  url: search/
+                  weight: 10
+
+params:
+  ShowShareButtons: false
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  profileMode:
+    enabled: true
+    title: "farx || max"
+    imageUrl: "https://avatars.githubusercontent.com/u/3371977?v=4"
+    imageTitle: "Picture of me"
+
+  socialIcons:
+    - name: "Linkedin"
+      url: "https://www.linkedin.com/in/max-gnipping/"
+    - name: "Github"
+      url: "https://github.com/farx"
+    - name: "RSS"
+      url: "index.xml"
+  assets:
+    favicon: "favicon.ico"
+    favicon16x16: "favicon.ico"
+    favicon32x32: "favicon.ico"
+    apple_touch_icon: "apple-touch-icon.png"
+    safari_pinned_tab: "farx.svg"
+
+
+privacy:
+    vimeo:
+        disabled: true
+        simple: true
+
+    twitter:
+        disabled: true
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: true
+        simple: true
+
+    youtube:
+        disabled: true
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
